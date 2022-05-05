@@ -1,0 +1,15 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <mat-icon aria-hidden="false">data_array</mat-icon>
+    <span>{{ appTitle }}</span>
+    <span class="example-spacer"></span>
+    <ul>
+      <li *ngIf="user">
+        <a (click)="logOut()" mat-button color="accent">
+          <span>Hello, </span
+          ><span class="logout">{{ user.profile.given_name }} - logout</span>
+        </a>
+      </li>
+    </ul>
+  </mat-toolbar-row>
+</mat-toolbar>
